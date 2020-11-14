@@ -1,1 +1,8 @@
 # Determiningthezoneofcoronavirus
+
+1.Problem Statement:
+ To determine the zone of coronavirus based on the given input. Whenever the user enters name of a particular region, then it identifies in which zone (Red or Green or Orange) the entered region is and gives the output according to it.
+
+2. Problem Description: 
+A novel type of coronavirus (2019-nCoV) infecting humans appeared in Wuhan, China, at the end of December 2019. Since the identification of the outbreak the infection quickly spread involving in one month more than 31,000 confirmed cases with 638 death. The Union Health Ministry on May 1 reclassified districts as coming under red, orange and green zones with specific guidelines for each heading into the lockdown extension announced by the Ministry of Home Affairs.
+ This classification is based on infection rates besides other factors. 319 districts with either zero confirmed cases or no confirmed cases in the last 21 days were classified as coming under the “green zone”. 130 districts were classified under falling under the” red zone” based on the relatively higher number of total number of active cases, the doubling rate of confirmed cases and the extent of testing and surveillance feedback from the districts. 284 districts were identified as under the "orange zone" - that were neither in the red or green zones. In this pandemic situation, it is important to know the zone of a particular area so that more precautions are to be taken to move forward. This Project determines the zone of a particular region based on the given input. Whenever the user enters name of a particular region, then it identifies in which zone (Red or Green or Orange) the entered region is and gives the output according to it.
