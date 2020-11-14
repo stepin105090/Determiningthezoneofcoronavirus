@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1601540943 source:c:\users\srikarani\onedrive\desktop\covid\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1605157087 source:d:\covid\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"covid.h"
+	"test_covid.h"
+
+1605162724 source:d:\covid\src\covid.c
+	"covid.h"
+	"test_covid.h"
+
+1605163744 d:\covid\inc\covid.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1602004900 source:d:\covid\total.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1602352416 source:d:\covid\src\newmain.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"covid.h"
+
+1603260878 source:d:\covid\unity\unity.c
+	"unity.h"
+	<stddef.h>
+	<avr/pgmspace.h>
+
+1601889688 d:\covid\unity\unity.h
+	"unity_internals.h"
+
+1602675641 d:\covid\unity\unity_internals.h
+	"unity_config.h"
+	<setjmp.h>
+	<math.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdint.h>
+	<limits.h>
+	<stdio.h>
+	<stdio.h>
+	<time.h>
+	<time.h>
+
+1604941361 source:d:\covid\test\test_covid.c
+	"unity.h"
+	"covid.h"
+
+1604941358 d:\covid\test\test_covid.h
+

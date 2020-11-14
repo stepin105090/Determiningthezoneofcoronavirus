@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<results version="2">
+    <cppcheck version="2.2" />
+    <errors>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose='scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c' cwe="119" hash="15967232784074536172">
+            <location file="main.c" line="21" column="3" />
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose='scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c' cwe="119" hash="375582240340434386">
+            <location file="main.c" line="27" column="4" />
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose='scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c' cwe="119" hash="9476474962953876127">
+            <location file="main.c" line="29" column="4" />
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose='scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c' cwe="119" hash="7856913560387884994">
+            <location file="main.c" line="31" column="4" />
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose='scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c' cwe="119" hash="10441884554013942521">
+            <location file="main.c" line="42" column="5" />
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose='scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c' cwe="119" hash="3528944400390026242">
+            <location file="main.c" line="47" column="7" />
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose='scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c' cwe="119" hash="1333428612846320767">
+            <location file="main.c" line="53" column="7" />
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;Name&apos; can be reduced." verbose="The scope of the variable &apos;Name&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" hash="9797605375108368898">
+            <location file="main.c" line="16" column="10" />
+            <symbol>Name</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;District&apos; can be reduced." verbose="The scope of the variable &apos;District&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" hash="13476405276849542921">
+            <location file="main.c" line="16" column="24" />
+            <symbol>District</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;State&apos; can be reduced." verbose="The scope of the variable &apos;State&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" hash="6755053460220048045">
+            <location file="main.c" line="16" column="42" />
+            <symbol>State</symbol>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: result" verbose="Memory leak: result" cwe="401" hash="4925950483534147764">
+            <location file0="src\covid.c" file="src\covid.c" line="34" column="5" />
+            <symbol>result</symbol>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 of 31 configurations. Use --force to check all configurations." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time." cwe="398">
+            <location file="test\test_covid.c" line="0" column="0" />
+        </error>
+        <error id="preprocessorErrorDirective" severity="error" msg="failed to expand &apos;RUN_TEST&apos;, Wrong number of parameters for macro &apos;RUN_TEST&apos;." verbose="failed to expand &apos;RUN_TEST&apos;, Wrong number of parameters for macro &apos;RUN_TEST&apos;.">
+            <location file="test\test_covid.c" line="27" column="0" />
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;RUN_TEST&apos; since the value of &apos;RUN_TEST&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;RUN_TEST&apos; since the value of &apos;RUN_TEST&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="test\test_covid.c" line="27" column="0" />
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;RUN_TEST&apos; since the value of &apos;RUN_TEST&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;RUN_TEST&apos; since the value of &apos;RUN_TEST&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="test\test_covid.c" line="28" column="0" />
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_TIME_TYPE&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_TIME_TYPE&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="unity\unity_internals.h" line="471" column="0" />
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_TIME_TYPE&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_TIME_TYPE&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="unity\unity_internals.h" line="472" column="0" />
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_TIME_TYPE&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_TIME_TYPE&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="unity\unity_internals.h" line="471" column="0" />
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_TIME_TYPE&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_TIME_TYPE&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="unity\unity_internals.h" line="472" column="0" />
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;_WIN32&apos; since the value of &apos;UNITY_TIME_TYPE&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;_WIN32&apos; since the value of &apos;UNITY_TIME_TYPE&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="unity\unity_internals.h" line="471" column="0" />
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;_WIN32&apos; since the value of &apos;UNITY_TIME_TYPE&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;_WIN32&apos; since the value of &apos;UNITY_TIME_TYPE&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="unity\unity_internals.h" line="472" column="0" />
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;__unix__&apos; since the value of &apos;UNITY_TIME_TYPE&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;__unix__&apos; since the value of &apos;UNITY_TIME_TYPE&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="unity\unity_internals.h" line="471" column="0" />
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;__unix__&apos; since the value of &apos;UNITY_TIME_TYPE&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME;__unix__&apos; since the value of &apos;UNITY_TIME_TYPE&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="unity\unity_internals.h" line="472" column="0" />
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 of 42 configurations. Use --force to check all configurations." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time." cwe="398">
+            <location file="unity\unity.c" line="0" column="0" />
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;nibble&apos; can be reduced." verbose="The scope of the variable &apos;nibble&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" hash="3986440151819119050">
+            <location file0="unity\unity.c" file="unity\unity.c" line="277" column="9" />
+            <symbol>nibble</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;i&apos; can be reduced." verbose="The scope of the variable &apos;i&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" hash="10299702529398782790">
+            <location file0="unity\unity.c" file="unity\unity.c" line="1352" column="18" />
+            <symbol>i</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;i&apos; can be reduced." verbose="The scope of the variable &apos;i&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" hash="6293666380652937732">
+            <location file0="unity\unity.c" file="unity\unity.c" line="1392" column="18" />
+            <symbol>i</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;bytes&apos; can be reduced." verbose="The scope of the variable &apos;bytes&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" hash="6054655146088864012">
+            <location file0="unity\unity.c" file="unity\unity.c" line="1516" column="18" />
+            <symbol>bytes</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;i&apos; is assigned a value that is never used." verbose="Variable &apos;i&apos; is assigned a value that is never used." cwe="563" hash="2311938004759035564">
+            <location file0="unity\unity.c" file="unity\unity.c" line="1433" column="20" />
+            <symbol>i</symbol>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_EXEC_TIME_START&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_EXEC_TIME_START&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="unity\unity.c" line="1835" column="0" />
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_EXEC_TIME_STOP&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_EXEC_TIME_STOP&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="unity\unity.c" line="1845" column="0" />
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_PRINT_EXEC_TIME&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_PRINT_EXEC_TIME&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="unity\unity.c" line="559" column="0" />
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_EXEC_TIME_START&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_EXEC_TIME_START&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="unity\unity.c" line="1835" column="0" />
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_EXEC_TIME_STOP&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_EXEC_TIME_STOP&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="unity\unity.c" line="1845" column="0" />
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_PRINT_EXEC_TIME&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME&apos; since the value of &apos;UNITY_PRINT_EXEC_TIME&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="unity\unity.c" line="559" column="0" />
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 of 31 configurations. Use --force to check all configurations." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time." cwe="398">
+            <location file="unity\unity.h" line="0" column="0" />
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 of 26 configurations. Use --force to check all configurations." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time." cwe="398">
+            <location file="unity\unity_internals.h" line="0" column="0" />
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;UnityAssertBits&apos; is never used." verbose="The function &apos;UnityAssertBits&apos; is never used." cwe="561">
+            <location file="unity\unity.c" line="686" column="0" />
+            <symbol>UnityAssertBits</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;UnityAssertEqualFloatArray&apos; is never used." verbose="The function &apos;UnityAssertEqualFloatArray&apos; is never used." cwe="561">
+            <location file="unity\unity.c" line="905" column="0" />
+            <symbol>UnityAssertEqualFloatArray</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;UnityAssertEqualIntArray&apos; is never used." verbose="The function &apos;UnityAssertEqualIntArray&apos; is never used." cwe="561">
+            <location file="unity\unity.c" line="775" column="0" />
+            <symbol>UnityAssertEqualIntArray</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;UnityAssertEqualMemory&apos; is never used." verbose="The function &apos;UnityAssertEqualMemory&apos; is never used." cwe="561">
+            <location file="unity\unity.c" line="1505" column="0" />
+            <symbol>UnityAssertEqualMemory</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;UnityAssertEqualString&apos; is never used." verbose="The function &apos;UnityAssertEqualString&apos; is never used." cwe="561">
+            <location file="unity\unity.c" line="1347" column="0" />
+            <symbol>UnityAssertEqualString</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;UnityAssertEqualStringArray&apos; is never used." verbose="The function &apos;UnityAssertEqualStringArray&apos; is never used." cwe="561">
+            <location file="unity\unity.c" line="1426" column="0" />
+            <symbol>UnityAssertEqualStringArray</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;UnityAssertEqualStringLen&apos; is never used." verbose="The function &apos;UnityAssertEqualStringLen&apos; is never used." cwe="561">
+            <location file="unity\unity.c" line="1386" column="0" />
+            <symbol>UnityAssertEqualStringLen</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;UnityAssertFloatSpecial&apos; is never used." verbose="The function &apos;UnityAssertFloatSpecial&apos; is never used." cwe="561">
+            <location file="unity\unity.c" line="972" column="0" />
+            <symbol>UnityAssertFloatSpecial</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;UnityAssertFloatsWithin&apos; is never used." verbose="The function &apos;UnityAssertFloatsWithin&apos; is never used." cwe="561">
+            <location file="unity\unity.c" line="953" column="0" />
+            <symbol>UnityAssertFloatsWithin</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;UnityAssertGreaterOrLessOrEqualNumber&apos; is never used." verbose="The function &apos;UnityAssertGreaterOrLessOrEqualNumber&apos; is never used." cwe="561">
+            <location file="unity\unity.c" line="728" column="0" />
+            <symbol>UnityAssertGreaterOrLessOrEqualNumber</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;UnityAssertNumbersArrayWithin&apos; is never used." verbose="The function &apos;UnityAssertNumbersArrayWithin&apos; is never used." cwe="561">
+            <location file="unity\unity.c" line="1227" column="0" />
+            <symbol>UnityAssertNumbersArrayWithin</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;UnityAssertNumbersWithin&apos; is never used." verbose="The function &apos;UnityAssertNumbersWithin&apos; is never used." cwe="561">
+            <location file="unity\unity.c" line="1180" column="0" />
+            <symbol>UnityAssertNumbersWithin</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;UnityFail&apos; is never used." verbose="The function &apos;UnityFail&apos; is never used." cwe="561">
+            <location file="unity\unity.c" line="1760" column="0" />
+            <symbol>UnityFail</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;UnityFloatToPtr&apos; is never used." verbose="The function &apos;UnityFloatToPtr&apos; is never used." cwe="561">
+            <location file="unity\unity.c" line="1612" column="0" />
+            <symbol>UnityFloatToPtr</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;UnityIgnore&apos; is never used." verbose="The function &apos;UnityIgnore&apos; is never used." cwe="561">
+            <location file="unity\unity.c" line="1797" column="0" />
+            <symbol>UnityIgnore</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;UnityMessage&apos; is never used." verbose="The function &apos;UnityMessage&apos; is never used." cwe="561">
+            <location file="unity\unity.c" line="1813" column="0" />
+            <symbol>UnityMessage</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;UnityNumToPtr&apos; is never used." verbose="The function &apos;UnityNumToPtr&apos; is never used." cwe="561">
+            <location file="unity\unity.c" line="1586" column="0" />
+            <symbol>UnityNumToPtr</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;UnitySetTestFile&apos; is never used." verbose="The function &apos;UnitySetTestFile&apos; is never used." cwe="561">
+            <location file="unity\unity.c" line="1851" column="0" />
+            <symbol>UnitySetTestFile</symbol>
+        </error>
+        <error id="missingInclude" severity="information" msg="Cppcheck cannot find all the include files (use --check-config for details)" verbose="Cppcheck cannot find all the include files. Cppcheck can check the code without the include files found. But the results will probably be more accurate if all the include files are found. Please check your project&apos;s include directories and add all of them as include directories for Cppcheck. To see what files Cppcheck cannot find use --check-config." />
+    </errors>
+</results>
